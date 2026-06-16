@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tables</title>
+  </head>
+  <style>
+    .firstCol {
+      background-color: burlywood;
+    }
+    .SecondCol {
+      background-color: blueviolet;
+    }
+    .ThirdCol {
+      background-color: cadetblue;
+    }
+    .FourthCol {
+      background-color: chocolate;
+    }
+    .chiraag {
+      background-color: crimson;
+    }
+    table,
+    tbody,
+    th,
+    td {
+      border: 2px solid black;
+    }
+  </style>
+  <body>
+    <table>
+      <caption>
+        Data of Students
+      </caption>
+      <colgroup>
+        <col class="firstCol" />
+        <col class="SecondCol" />
+        <col class="ThirdCol" />
+        <col class="FourthCol" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Class</th>
+          <th>Age</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Param</td>
+
+          <td>DSAI</td>
+
+          <td>22</td>
+
+          <td>7896148621</td>
+        </tr>
+
+        <tr>
+          <td>chiraag</td>
+
+          <td>DSAI</td>
+
+          <td class="chiraag">22</td>
+
+          <td>7896148621</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Details</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
