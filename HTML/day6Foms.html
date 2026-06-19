@@ -6,14 +6,62 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
-      <label> <input type="radio" name="gender" id="male" />Male </label>
-      <br />
+<form action="" method="post" autocomplete="on">
+  <h2>Registration Form</h2>
+  <label for="fname">Name</label>
+  <input type="text" placeholder="Enter your name" name="fname" id="fname"></input>
+  <br/>
+  <br/>
+  <label for="contact">Contact</label>
+  <input type="number" name="contact" id="contact">
+<br/>
+<br/>
 
-      <label> <input type="radio" name="gender" id="female" />female </label>
-      <br />
+<label for="dob">DOB</label>
+<input type="date" name="dob" id="dob">
+<br/>
+<br/>
+<label for="gender">gender</label>
+<input type="radio" name="gender" id="male">Male
 
-      <label> <input type="radio" name="gender" id="others" />Others </label>
-    </form>
+<input type="radio" name="gender" id="Female">Female
+
+<input type="radio" name="gender" id="Others">Others
+<br/>
+<br/>
+<label for="fLang">Fav.Language</label>
+<input type="radio" name="fLang" id="CSS">CSS
+
+<input type="radio" name="fLang" id="HTML">HTML
+
+<input type="radio" name="fLang" id="JS">Javascript
+<br/>
+<br/>
+
+<label for="city">City</label>
+<select name="city" id="city" size="2" >
+  <option value="Raipur">Raipur</option>
+  <option value="Raigarh">Raigarh</option>
+  <option>KORBA</option>
+  <option value="JDP" selected>JDP</option>
+  <option>Bhilai</option>
+  <option>Ambikapur</option>
+</select>
+<br/>
+<br/>
+<label>Message</label>
+<br/>
+<textarea rows="10" cols="30" placeholder="Enter your message">
+
+</textarea>
+
+<br/>
+<br/>
+
+  <button type="submit">Submit</button>
+  
+  <button type="reset">Reset</button>
+</form>
+
   </body>
 </html>
