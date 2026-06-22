@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Audio</h2>
+    <!-- 
+    <audio> tag is used to embed sound in a webpage.
+    
+    Important attributes:
+    - controls → Shows play/pause buttons
+    - autoplay → Automatically starts playing
+    - loop → Repeats the audio
+    - muted → Starts audio without sound
+    - preload → auto | metadata | none
+  -->
+
+    <audio controls autoplay loop muted preload="none">
+      <source src="../assets/128-Tu Jo Mila - Bajrangi Bhaijaan 128 Kbps.mp3" />
+    </audio>
+    <!-- <video> tag is used to embed videos.
+    
+    Important attributes:
+    - controls → Shows video controls
+    - autoplay → Auto starts video
+    - loop → Repeats video
+    - muted → Starts video muted
+    - poster → Thumbnail image before play
+    - width / height → Size of video -->
+
+    <video
+      controls
+      loop
+      height="300px"
+      width="300px"
+      poster="../assets/bandar.jpg"
+    >
+      <source src="../assets/Video Project (3).mp4" />
+    </video>
+  </body>
+</html>
