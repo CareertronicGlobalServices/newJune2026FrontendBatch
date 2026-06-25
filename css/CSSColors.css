@@ -1,0 +1,50 @@
+/* Giving colors in css  
+1.Color names - 140 standard names
+2.Hex values
+3.rgb
+4.rgba
+5.hsl
+6.hsla */
+
+#first {
+  background-color: #000000;
+  color: #672e2e;
+}
+
+#Second {
+  background-color: aliceblue;
+  color: rgb(120, 120, 120);
+}
+#Third {
+  background-color: rgba(82, 41, 82, 1);
+}
+#fourth {
+  background-color: hsl(120, 50%, 50%);
+  color: hsla(240, 50%, 50%, 0.5);
+}
+
+body {
+  background-color: antiquewhite;
+  background-image: url("https://www.shutterstock.com/image-photo/almond-tree-branch-flowers-on-600w-1920108245.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.btn {
+  background-color: red;
+  color: aliceblue;
+  border-color: #000000;
+  border-width: 2px 3px 4px 5px;
+  /* // top right bottom left */
+  border-style: groove;
+  padding: 10px 20px 30px 40px;
+  margin: 20px 40px;
+}
+
+/* Shorthand notation -margin padding 
+1. single value - appply on all side 
+2.two values- (top and bottom) (left right)
+3.Three values- top (left/right)  bottom
+4.Four values - top right bottom left
+*/
