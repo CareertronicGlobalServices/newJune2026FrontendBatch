@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Combinators Demo</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 30px;
+      }
+
+      .box {
+        border: 2px solid black;
+        padding: 20px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        color: darkblue;
+      }
+
+      /* ===================================
+       1. Descendant Combinator (space)
+       =================================== */
+
+      .descendant p {
+        color: red;
+      }
+
+      /* 
+       2. Child Combinator (>)
+      */
+
+      .child > p {
+        color: blue;
+        font-weight: bold;
+      }
+
+      /* 
+       3. Adjacent Sibling (+)
+       */
+
+      .adjacent h3 + p {
+        background: yellow;
+        padding: 5px;
+      }
+
+      /* 
+       4. General Sibling /subsequent sibling (~)
+       */
+
+      .general h3 ~ p {
+        color: green;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>CSS Combinators Demo</h1>
+
+    <!-- 1. Descendant Combinator -->
+
+    <div class="box descendant">
+      <h2>1. Descendant Combinator (space)</h2>
+
+      <p>Paragraph 1 (Selected)</p>
+
+      <div>
+        <p>Paragraph 2 (Selected)</p>
+
+        <section>
+          <div><p>Check</p></div>
+          <p>Paragraph 3 (Selected)</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- 2. Child Combinator -->
+
+    <div class="box child">
+      <h2>2. Child Combinator (>)</h2>
+
+      <p>Paragraph 1 (Selected)</p>
+      <p>Hello World</p>
+      <div>
+        <p>Paragraph 2 (Not Selected)</p>
+        <p>Hello World</p>
+
+        <section>
+          <p>Paragraph 3 (Not Selected)</p>
+        </section>
+      </div>
+    </div>
+
+    <!-- 3. Adjacent Sibling(+) -->
+
+    <div class="box adjacent">
+      <h2>3. Adjacent/next Sibling (+)</h2>
+      <p>hee</p>
+      <h3>Heading</h3>
+
+      <p>Paragraph 1 (Selected)</p>
+
+      <p>Paragraph 2 (Not Selected)</p>
+
+      <h3>Just testing</h3>
+      <p>Paragraph 3 ( Selected)</p>
+
+      <h2>xyx</h2>
+      <p>bhdfhg</p>
+    </div>
+
+    <!-- 4. General Sibling -->
+
+    <div class="box general">
+      <h2>4. General Sibling (~)</h2>
+      <p>hello ji</p>
+
+      <h3>Heading</h3>
+
+      <p>Paragraph 1 (Selected)</p>
+
+      <div>This is a div.</div>
+
+      <p>Paragraph 2 (Selected)</p>
+
+      <p>Paragraph 3 (Selected)</p>
+      <div>
+        <p>Check</p>
+      </div>
+    </div>
+  </body>
+</html>

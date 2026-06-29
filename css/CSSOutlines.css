@@ -1,0 +1,49 @@
+#btn {
+  border-radius: 50px;
+  border: 2px solid red;
+  margin: 50px;
+  padding: 20px;
+  background-color: aqua;
+  outline-width: 20px;
+  outline-style: outset;
+  outline-color: rebeccapurple;
+  /* ShortHand notation*/
+  outline-offset: 10px;
+  /* outline: 5px groove rebeccapurple; */
+}
+p {
+  outline: 5px double rebeccapurple;
+  outline-offset: 10px;
+  border-radius: 50px;
+  width: 300px;
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
+  text-align-last: end;
+  text-decoration-line: underline;
+  text-decoration-color: cadetblue;
+  text-decoration-style: double;
+  text-decoration-thickness: 2px;
+  text-transform: capitalize;
+  text-indent: 50px;
+  letter-spacing: 1px;
+  line-height: 2;
+  word-spacing: 10px;
+  text-shadow: 0 0 5px #ff0000;
+  color: white;
+}
+
+#para {
+  outline: 5px double rebeccapurple;
+  outline-offset: 10px;
+  border-radius: 50px;
+  width: 300px;
+  margin: 50px;
+  padding: 10px;
+  text-align: center;
+  text-align-last: end;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  font-style: italic;
+}
