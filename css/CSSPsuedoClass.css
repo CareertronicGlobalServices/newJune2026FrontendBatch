@@ -1,0 +1,19 @@
+#hoverBtn:hover {
+  background-color: blue;
+  color: white;
+}
+#btnActive:active {
+  background-color: red;
+  color: aqua;
+}
+#inputFocus {
+  margin: 20px;
+}
+#inputFocus:focus {
+  border: 5px solid green;
+  outline: none;
+}
+#Test:disabled {
+  background-color: red;
+  color: rgb(224, 187, 187);
+}
