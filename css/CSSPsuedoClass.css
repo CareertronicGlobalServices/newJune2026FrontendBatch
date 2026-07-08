@@ -1,9 +1,14 @@
+:root {
+  --primary: violet;
+  --secondary: red;
+}
+
 #hoverBtn:hover {
   background-color: blue;
   color: white;
 }
 #btnActive:active {
-  background-color: red;
+  background-color: var(--secondary);
   color: aqua;
 }
 #inputFocus {
@@ -16,4 +21,41 @@
 #Test:disabled {
   background-color: red;
   color: rgb(224, 187, 187);
+}
+/* Link pseudo classes
+LVHA - loVe HAte
+Link 
+Visited
+hover
+active */
+
+a:link {
+  color: red;
+  background-color: aqua;
+}
+a:visited {
+  color: blue;
+  background-color: white;
+}
+a:hover {
+  background-color: white;
+  color: black;
+}
+a:active {
+  color: darkkhaki;
+}
+
+li:first-child {
+  background-color: aquamarine;
+}
+
+li:last-child {
+  background-color: violet;
+}
+
+li:nth-child(2) {
+  background-color: violet;
+}
+li:nth-last-child(2) {
+  background-color: var(--primary);
 }

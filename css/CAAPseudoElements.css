@@ -1,0 +1,21 @@
+p::first-letter {
+  font-size: 72px;
+}
+p::after {
+  content: "India";
+  color: green;
+}
+/* p::before {
+  content: "🌟";
+} */
+
+p::first-line {
+  color: violet;
+}
+p::selection {
+  background-color: yellow;
+  color: black;
+}
+input::placeholder {
+  color: blueviolet;
+}
