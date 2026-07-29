@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  margin: 20px;
+  height: 500px;
+  width: 500px;
+  border: 2px solid black;
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  row-gap: 10px;
+  column-gap: 10px;
+  /* //justify-items: center; */
+  /* //align-items: center; */
+  grid-auto-flow: row;
+  /* justify-content: center; */
+  /* align-content: center; */
+}
+.box {
+  /* height: 50px;
+  width: 50px; */
+  border: 3px solid black;
+}
+.one {
+  background-color: aliceblue;
+  grid-column: 1/2;
+  grid-row: 1 / span 3;
+}
+.five{
+  /* align-self: start;
+  justify-self: start; */
+  background-color: red;
+  /* grid-column-start: 1;
+  grid-column-end: 2; */
+  /* //grid-column: 1/2;
+  /* grid-row-start: 3;
+  grid-row-end: 4; */
+  /* grid-row: 3/4; */ */
+}
+
+.two {
+  background-color: brown;
+  grid-column: 2/span 2;
+}
+
+.three {
+  background-color: blueviolet;
+}
+
+.four {
+  background-color: yellowgreen;
+}
+
+.six {
+  background-color: yellow;
+  grid-row: 2/ span 2;
+  grid-column: 4/5;
+}
+
+.seven {
+  background-color: violet;
+  /* grid-column: 2 / span 3;
+  justify-self: center;
+  grid-row: 1 / span 3; */
+}
+
+/* .eight {
+  background-color: tomato;
+} */
+
+.nine {
+  background-color: sienna;
+  /* grid-column-start: 3;
+  grid-column-end: 4; */
+  /* grid-row-start: 1;
+  grid-row-end: 2; */
+}

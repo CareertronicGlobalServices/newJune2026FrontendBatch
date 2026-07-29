@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #3468db;
+  --secondary-color: #2ea7a7;
+  --heading-color: #e74c;
+  --font-size: 20px;
+}
+
+p {
+  color: var(--primary-color);
+  font-size: var(--font-size);
+}
+
+.divbox {
+  --borderRadius: 20px;
+  width: 200px;
+  height: 200px;
+  background-color: var(--secondary-color);
+  margin-bottom: 50px;
+
+  /* //local variables */
+  border-radius: var(--borderRadius);
+}
+
+.divbox {
+  --borderRadius: 50px;
+}
+h1,
+h2 {
+  color: var(--heading-color);
+}
