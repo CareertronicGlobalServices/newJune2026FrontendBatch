@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 40px;
+  font-family: Arial;
+}
+
+/* 1. TEXT SHADOW */
+
+h1 {
+  color: white;
+
+  /* x | y | blur | color */
+  text-shadow: 3px 3px 8px black;
+}
+
+/* 2. BOX SHADOW */
+
+.card {
+  width: 300px;
+  padding: 20px;
+
+  background: white;
+  border-radius: 15px;
+
+  /* x | y | blur | spread | color */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+}
+
+/* 3. FILTER */
+
+.card img {
+  /* blur image */
+  filter: blur(3px);
+
+  /* black & white */
+  /* filter: grayscale(100%); */
+
+  /* brightness */
+  /* filter: brightness(1.5); */
+
+  /* color intensity */
+  /* filter: saturate(30); */
+
+  transition: 0.5s;
+}
+
+.card img:hover {
+  filter: grayscale(100%);
+  filter: blur(1px);
+}
+
+/* 4. BACKDROP FILTER */
+
+.card {
+  background: rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* 5. CLIP PATH */
+
+.card img {
+  clip-path: circle(50%);
+}
+
+/* 6. 3D EFFECT */
+
+.card {
+  transition: transform 2s;
+}
+
+.card:hover {
+  transform: perspective(800px) rotateZ(360deg);
+}

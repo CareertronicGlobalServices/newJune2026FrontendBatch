@@ -1,0 +1,34 @@
+* {
+  color: aqua;
+  width: 100vh;
+}
+h1 {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+h1 {
+  color: rebeccapurple !important ;
+  font-family: "Bitcount Prop Single";
+  font-size: clamp(28px, 5vw, 60px);
+}
+
+#mainHeading {
+  color: yellow;
+}
+
+.secHeading {
+  color: brown;
+}
+
+input[type="text"][name="username"] {
+  border-radius: 20px;
+  /* width: calc(100% + 200px); */
+  width: min(90%, 200px);
+}
+input[type="password"] {
+  border-radius: 20px;
+}
