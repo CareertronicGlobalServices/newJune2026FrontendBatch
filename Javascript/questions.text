@@ -1,0 +1,64 @@
+Que.1
+Write a program to check the students eligibility for college admission 
+Rules 
+1. 12th School percentage  60 and above  
+2. entrace exam 70 and above
+
+-------------------------------------------------------------
+Que.2
+ATM Logic
+let balance = 5000;
+let withdrawal = 3000;
+
+If withdrawal > 0
+    If withdrawal <= balance
+        → "Transaction Successful"
+        → Show remaining balance
+    Else
+        → "Insufficient Balance"
+Else
+    → "Invalid Amount"
+
+Write the complete program
+
+------------------------------------------------------------
+Question 3
+
+Predict the output 
+
+let age = 20;
+let hasID = false;
+
+if (age >= 18) {
+    console.log("Age is valid");
+
+    if (hasID) {
+        console.log("Entry Allowed");
+    } else {
+        console.log("ID Required");
+    }
+} else {
+    console.log("Underage");
+}
+
+--------------------------------------------------------------
+
+Que4
+Build a movie ticket checker
+let age = 16;
+let hasParent = true;
+Rules 
+If age >= 18
+    → "Ticket Allowed"
+Else
+    If age >= 13
+        If hasParent
+            → "Ticket Allowed with Parent"
+        Else
+            → "Parent Required"
+    Else
+        → "Ticket Not Allowed"
+
+---------------------------------------------
+Question 5
+Check if a year is a leap year
