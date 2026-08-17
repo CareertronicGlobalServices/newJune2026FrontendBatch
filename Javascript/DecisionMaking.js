@@ -201,6 +201,7 @@
 // console.log(
 //   `Amount: ${amount} DiscountPercent :${discountPer} NetPayableAmount: ${amountPayable}`,
 // );
+
 // let letter = "b";
 
 // if (
@@ -226,20 +227,61 @@
 // User → "Read only access"
 // Any other role → "Invalid role"
 
-let isLoggedIn = false;
-let role = "user";
+// let isLoggedIn = false;
+// let role = "user";
 
-if (isLoggedIn) {
-  if (role === "Admin") {
-    console.log("Full Access");
-  } else if (role === "Editor") {
-    console.log("Can Edit Content");
-  } else if (role === "user") {
-    console.log("Read Only ");
-    b;
-  } else {
-    console.log("InvalidROle");
+// if (isLoggedIn) {
+//   if (role === "Admin") {
+//     console.log("Full Access");
+//   } else if (role === "Editor") {
+//     console.log("Can Edit Content");
+//   } else if (role === "user") {
+//     console.log("Read Only ");
+//     b;
+//   } else {
+//     console.log("InvalidROle");
+//   }
+// } else {
+//   console.log("Please Login");
+// }
+
+// ---------------------------------------------------------
+// ---------------------------------------------------------------
+// Switch-case
+
+let day = 17;
+
+switch (day) {
+  case 1: {
+    console.log("Monday");
+    break;
   }
-} else {
-  console.log("Please Login");
+  case 2: {
+    console.log("Tuesday");
+    break;
+  }
+  case 3: {
+    console.log("Wednesday");
+    break;
+  }
+  case 4: {
+    console.log("Thursday");
+    break;
+  }
+  case 5: {
+    console.log("Friday");
+    break;
+  }
+  case 6: {
+    console.log("Saturday");
+    break;
+  }
+
+  case 7: {
+    console.log("Sunday");
+    break;
+  }
+  default: {
+    console.log("Invalid Number , Enter number from 1 to 7");
+  }
 }
