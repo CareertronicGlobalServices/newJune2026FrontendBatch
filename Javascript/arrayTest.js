@@ -113,33 +113,66 @@
 // let avg = sum / numbers.length;
 // console.log(avg);
 // find the average of an array
-//find the largest number in an array
+// //find the largest number in an array
 
-// let numbers = [11, 24, 7825, 35, 402, 57, 68, 74, 100, 963, 748];
-// let largest = 0;
+// // let numbers = [11, 24, 7825, 35, 402, 57, 68, 74, 100, 963, 748];
+// // let largest = 0;
+
+// // for (let i = 0; i < numbers.length; i++) {
+// //   if (largest < numbers[i]) {
+// //     largest = numbers[i];
+// //   }
+// // }
+// // console.log(`largest ${largest}`);
+// let lang = ["J", "A", "V", "A", "S", "C", "R", "I", "P", "T"];
+
+// //Output
+// // J
+// // JA
+// // JAVA
+// // JAVAS
+// // JAVASC
+// // JAVASCR
+// // JAVASCRI
+// // JAVASCRIP
+// // JAVASCRIPT
+// for (let i = 0; i < lang.length; i++) {
+//   let row = "";
+//   for (let j = 0; j <= i; j++) {
+//     row = row + lang[j];
+//   }
+//   console.log(row);
+// }
+// let numbers = [11, 24, 7825, 35, 402, 57, 1, 68, 74, 100, 963, 748, 2];
+// let smallest = numbers[0];
 
 // for (let i = 0; i < numbers.length; i++) {
-//   if (largest < numbers[i]) {
-//     largest = numbers[i];
+//   if (smallest > numbers[i]) {
+//     smallest = numbers[i];
 //   }
 // }
-// console.log(`largest ${largest}`);
-let lang = ["J", "A", "V", "A", "S", "C", "R", "I", "P", "T"];
+// console.log(`smallest ${smallest}`);
 
-//Output
-// J
-// JA
-// JAVA
-// JAVAS
-// JAVASC
-// JAVASCR
-// JAVASCRI
-// JAVASCRIP
-// JAVASCRIPT
-for (let i = 0; i < lang.length; i++) {
-  let row = "";
-  for (let j = 0; j <= i; j++) {
-    row = row + lang[j];
+let students = [
+  { name: "Rahul", marks: 85 },
+  { name: "Priya", marks: 92 },
+  { name: "Aman", marks: 76 },
+  { name: "Neha", marks: 65 },
+];
+
+let studSearcch = "Neha";
+let found = 0;
+for (let i = 0; i < students.length; i++) {
+  if (students[i].name === studSearcch) {
+    console.log("Student Found");
+    found = 1;
+    students[i].marks = 55;
+    break;
   }
-  console.log(row);
 }
+if (!found) {
+  console.log("Student Nahi mila");
+}
+let newStudent = { name: "Vaibhav", marks: 65 };
+students.push(newStudent);
+console.log(students);

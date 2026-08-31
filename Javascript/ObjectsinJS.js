@@ -35,17 +35,47 @@ obj1.name = "Vaibhavi Nirmalkar";
 console.log(obj1);
 
 //
-let user = {
-  name: "Vaibhavi",
-  age: 25,
-  contact: 8585858585,
-  Email: "test@test.com",
-  skills: ["JavaScript", "HTML", "CSS"],
-  address: {
-    HouseNo: 100077,
-    Street: "C17",
-    City: "Raipur",
-    State: "C.G.",
+// let user = {
+//   name: "Vaibhavi",
+//   age: 25,
+//   contact: 8585858585,
+//   Email: "test@test.com",
+//   skills: ["JavaScript", "HTML", "CSS"],
+//   address: {
+//     HouseNo: 100077,
+//     Street: "C17",
+//     City: "Raipur",
+//     State: "C.G.",
+//   },
+// };
+// console.log(user.address.City);
+
+// // //Methods
+// // 1.Object.keys //returns an array of keys
+// console.log(Object.keys(user));
+// //2.Object.values //returns an array of values
+// console.log(Object.values(user));
+// //Object.entries // return a array of all entries in the form of key value pair
+// console.log(Object.entries(user));
+
+let students = [
+  {
+    name: "Rahul",
+    age: 20,
+    marks: 85,
   },
-};
-console.log(user.address.City);
+  {
+    name: "Priya",
+    age: 21,
+    marks: 92,
+  },
+  {
+    name: "Aman",
+    age: 19,
+    marks: 76,
+  },
+];
+
+for (let i = 0; i < students.length; i++) {
+  console.log(`${i + 1}. ${students[i].name}`);
+}
