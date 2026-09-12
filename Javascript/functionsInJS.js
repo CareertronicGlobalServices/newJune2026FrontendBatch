@@ -96,25 +96,56 @@
 //     grade = "B+";
 //   } else if (percent > 60 && percent <= 70) {
 //     grade = "B";
-//   } else if (percent > 50 && percent <= 60) {
-//     grade = "C+";
-//   } else {
-//     grade = "Fail";
-//   }
+// //   } else if (percent > 50 && percent <= 60) {
+// //     grade = "C+";
+// //   } else {
+// //     grade = "Fail";
+// //   }
 
-//   return `${studentName} has secured ${grade} grade with ${percent.toFixed(3)}%`;
+// //   return `${studentName} has secured ${grade} grade with ${percent.toFixed(3)}%`;
+// // };
+// // console.log(result("Sonam", 85, 85, 98, 74, 65, 54));
+
+// // Arrow Function
+// // ()=>()(single line code - return ki jarurat nahi hai - implicit return)
+// //()=>{}(jaha block scope ko open kia wal aretuen keyword - explicit return)
+
+// const greetArrow = () => `HI hello function`;
+// const ans = greetArrow();
+// console.log(ans);
+
+// const addArrow = (a, b) => {
+//   return a + b;
 // };
-// console.log(result("Sonam", 85, 85, 98, 74, 65, 54));
+// console.log(addArrow(5, 6));
 
-// Arrow Function
-// ()=>()(single line code - return ki jarurat nahi hai - implicit return)
-//()=>{}(jaha block scope ko open kia wal aretuen keyword - explicit return)
+//using Arrow Functions check if a num is even or odd
 
-const greetArrow = () => `HI hello function`;
-const ans = greetArrow();
-console.log(ans);
+// const evenOdd = (num) => {
+//   if (num % 2 === 0) {
+//     return `even`;
+//   } else {
+//     return `Odd`;
+//   }
+// };
 
-const addArrow = (a, b) => {
-  return a + b;
-};
-console.log(addArrow(5, 6));
+// console.log(evenOdd(71));
+
+//IIFE((function )();)
+//Imediately Invoked Function Expression
+//named IIFE
+let result = "Pass";
+
+(function greet() {
+  console.log("Helloo");
+})();
+//unnamed /anonymous
+
+(function () {
+  console.log("I am Unnamed IIFE");
+})();
+
+(function (a, b) {
+  let result = a + b;
+  console.log(a + b, result);
+})(5, 6);
