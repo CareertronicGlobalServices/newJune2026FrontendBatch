@@ -179,19 +179,64 @@
 // console.log(a);
 // console.log(b);
 // console.log(c);
-// console.log(d);
+// // console.log(d);
 
-//Ternary Operator(condition ? trueOption : falseOption)
+// //Ternary Operator(condition ? trueOption : falseOption)
 
-//short form If-else
+// //short form If-else
 
-let age = 2;
-let check = age > 18 ? "ADULT" : "MINOR";
-console.log(check);
+// let age = 2;
+// let check = age > 18 ? "ADULT" : "MINOR";
+// console.log(check);
 
-//Even /odd
+// //Even /odd
 
-let num = 6;
+// let num = 6;
 
-let check2 = num % 2 == 0 ? "Even" : "Odd";
-console.log(check2);
+// // let check2 = num % 2 == 0 ? "Even" : "Odd";
+// // console.log(check2);
+
+// //Nullish Caalescing(??) //mai null or undefined ko avoid
+// const age = 0;
+// console.log(age ?? "20");
+
+// //truthy falsy values
+
+// const age2 = 0;
+// console.log(age2 || "56"); //
+
+// const user = {
+//   age: null,
+// };
+// console.log(`Welcome ${user.name ?? "Guest User"}`);
+
+//Optional Chaining(?.)
+
+// const userData = {
+//   name: "Rahul",
+//   age: 41,
+//   address: {},
+// };
+// console.log(userData.address?.city ?? "India");
+// const users = ["Aman", "Riya"];
+
+// console.log(users[3]);
+// // Aman
+
+const product = {
+  name: "Laptop",
+  price: null,
+};
+console.log(`The ${product.name} Costs Rs.${product.price ?? 25000}`);
+
+const user = {
+  name: "Riya",
+  age: null,
+  city: undefined,
+  points: 0,
+};
+
+// Name: Riya
+// Age: Not Available
+// City: Not Available
+// Points: 0
