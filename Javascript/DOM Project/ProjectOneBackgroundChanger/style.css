@@ -1,0 +1,12 @@
+div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.colorContainer {
+  display: flex;
+  flex-direction: row;
+}
+#red {
+  background-color: red;
+}
