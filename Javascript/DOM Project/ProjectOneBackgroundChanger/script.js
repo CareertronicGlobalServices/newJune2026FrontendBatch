@@ -13,6 +13,7 @@ const colorContainer = document.getElementById("colorContainer");
 
 const colors = ["grey", "azure", "Pink", "lightblue"];
 
+const container = document.querySelector(".container");
 //creating buttons automatically
 
 colors.forEach(function (color) {
@@ -42,3 +43,11 @@ colors.forEach(function (color) {
 reset.addEventListener("click", function () {
   document.body.style.backgroundColor = "white";
 });
+
+const button2 = document.createElement("button");
+button2.textContent = "Check";
+button2.style.backgroundColor = "lightgrey";
+button2.style.width = "100px";
+button2.style.height = "50px";
+//document.body.appendChild(button2);
+container.appendChild(button2);

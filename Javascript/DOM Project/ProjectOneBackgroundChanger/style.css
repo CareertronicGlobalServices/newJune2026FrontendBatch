@@ -3,10 +3,14 @@ div {
   flex-direction: column;
   gap: 20px;
 }
-.colorContainer {
+#colorContainer {
   display: flex;
   flex-direction: row;
 }
 #red {
   background-color: red;
+}
+#reset {
+  height: 50px;
+  width: 100px;
 }
